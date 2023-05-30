@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/user.css" />
+    <script defer src="./js/app-userOpcions.js" type="module"></script>
+
+
+    <script defer src="./js/app-log-reg.js" type="module"></script>
+    <title>Horno de Ana</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="./cuenta.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" id="user">
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
+            <ul class="dropdown-menu " id="user-menu">
+                <li><a  class="dropdown-item " href="./cuenta.html">
+
+                        Cuenta</a></li>
+                <li><a class="dropdown-item disabled" href="#">Preferencias</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item disabled w-100" href="#">Pedidos</a></li>
+                <hr class="dropdown-divider">
+                <button class="btn btn-light w-100 d-none" id="btn-logOut"> <a  href=""> Cerrar sesión</a> </button>
+                <button class="btn btn-light w-100 d-block" id="btn-login" > <a  href="./registro.html"> Iniciar sesión</a> </button>
+
+            </ul> 
+            
+        </div>
+        <div class="logo">
+            <h1>Horno de Ana</h1>
+        </div>
+
+        <nav class="navbar navbar-expand-lg" id="nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html"> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html"> Productos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./informacion.html"> Información </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="main-card">
+        <section id="log" class="r-card">
+
+            <div class="row justify-content-center card-body">
+                <h2 class="row card-title justify-content-center" style=" padding-bottom: 30px">
+                    Iniciar sesión
+                </h2>
+                <form class="w-100 ">
+                    <div class="mb-3 ">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-envelope"></i></span>
+                        <label for="log-email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" placeholder="usuario@mail.com" required
+                            id="log-email" aria-describedby="emailHelp" />
+    
+                    </div>
+                    <div class="mb-3">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-key"></i></span>
+                        <label for="log-pass" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" placeholder="Ej3mpl0" required
+                            id="log-pass" />
+                    </div>
+    
+                    <button id="btnSesion" class="btn btn-danger w-100"  type="button">Iniciar sesión</button>
+    
+                </form>
+                <div class="mt-4 text-center" style="padding-top: 5px;">
+                    <p>
+                        ¿No tienes cuenta?
+                    </p>
+                    <button id="btn-reg" class="btn btn-light w-50 ">¡Crea una!</button>
+                    <!-- <a href="registro.html"> ¡Crea una! </a> -->
+                </div>
+            </div>
+        </section>
+    
+        <section id="reg" class="l-card">
+    
+            <div class="row justify-content-center card-body">
+                <h2 class="row card-title justify-content-center" style="padding-bottom: 30px;">Registro</h2>
+                <form class=" w-100" >
+                    <div class="mb-3">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-user"></i></span>
+                        <label for="reg-name" class="form-label">Nombre de usuario</label>
+                        <input id="reg-name" name="name" type="text" placeholder="usuario" required class="form-control">
+    
+                    </div>
+                    <div class="mb-3">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-envelope"></i></span>
+                        <label for="reg-email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" placeholder="usuario@mail.com" required
+                            id="reg-email" aria-describedby="emailHelp"/>
+                    </div>
+                    <div class="mb-3">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-key"></i></span>
+                        <label for="reg-pass" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" placeholder="contraseña" required
+                            id="reg-pass" />
+                    </div>
+    
+                    <button id="btnRegistrar" class="btn btn-danger w-100" type="button">Registrar</button>
+    
+                </form>
+                <div class="mt-4 text-center" style="padding-top: 5px;">
+                    <p>
+                        ¿Tienes cuenta?
+                    </p>
+                    <button id="btn-log" class="btn btn-light w-50 ">Inicia sesión!</button>
+                    <!-- <a href="registro.html"> ¡Crea una! </a> -->
+                </div>
+                <!-- <div class="mt-4 text-center" style="padding-top: 15px;">
+                    ¿Tienes cuenta? <a href="sesion.html"> Inicia sesión!</a>
+                </div> -->
+            </div>
+    
+    
+        </section>
+    </main>
+
+
+    <footer class="text-center">
+        <div class="container p-4 pb-0">
+            <div class="mb-4">
+                <!-- Facebook -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <!-- Section: Social media -->
+        </div>
+
+        <div class="text-center p-3 nav-link">
+            © 2023 Copyright:
+            <a href="./index.html"> HornoDeAna.com </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   
+</body>
+
+</html>

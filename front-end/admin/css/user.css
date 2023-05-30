@@ -1,0 +1,94 @@
+@import url();
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-1:rgba(0, 0, 0, 0.123);
+    --color-2:rgb(211, 1, 1);
+    --color-3:rgba(255, 0, 0, 0.418);
+    --color-4: rgb(24, 24, 24);
+}
+
+#user{
+    margin: 15px;
+    position:fixed;
+    right: 0;
+    z-index: 100;
+   
+}
+
+#user i{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);    
+    transition: color .3s ease-out 100ms
+}
+#user i:hover{
+    font-size: 3rem;
+    color:var(--color-2);
+}
+
+#user-menu{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.123);
+    border: 1px solid rgba(0, 0, 0, 0.021);
+    z-index: 100;
+}
+.dropdown ul a:hover{
+    box-shadow: 0px 5px 15px 0px var(--color-1);
+    border-radius: 5px;
+}
+
+.dropdown ul a:active{
+    color: black;
+    background-color: var(--color-3);
+}
+
+.dropdown .nav-link:hover {
+   
+    color: var(--color-4);
+}
+
+.dropdown .nav-link:focus, .dropdown .nav-link i:focus {
+    color: var(--color-3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px){
+
+}
+/* / Escritorio grande / */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* / Escritorio pequeño / tablet / */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+/* / Tablets y phablets / */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+}
+
+/* / Teléfonos / */
+@media only screen and (max-width: 575px){
+
+}

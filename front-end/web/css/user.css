@@ -1,0 +1,128 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-1:rgba(0, 0, 0, 0.123);
+    --color-2:rgb(211, 1, 1);
+    --color-3:rgba(255, 0, 0, 0.418);
+    --color-4: rgb(24, 24, 24);
+}
+
+#user{
+    margin: 15px;
+    position:fixed;
+    right: 0;
+    z-index: 100;
+   
+}
+
+#user i{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);    
+    transition: color .3s ease-out 100ms
+}
+#user i:hover{
+    font-size: 3rem;
+    color:var(--color-2);
+}
+
+#user-menu{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.123);
+    border: 1px solid rgba(0, 0, 0, 0.021);
+    z-index: 100;
+}
+.dropdown ul a:hover{
+    box-shadow: 0px 5px 15px 0px var(--color-1);
+    border-radius: 5px;
+}
+
+.dropdown ul a:active{
+    color: black;
+    background-color: var(--color-3);
+}
+
+.dropdown .nav-link:hover {
+   
+    color: var(--color-4);
+}
+
+.dropdown .nav-link:focus, .dropdown .nav-link i:focus {
+    color: var(--color-3);
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+/*///////////////// Comprobacion de usuario activo////////////////////*/
+body{
+    position: relative;
+}
+#scan-user{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    /* width: 100%; */
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+#scan-user .container{
+    padding: 45vh 20vw;
+
+}
+#scan-user .container .card{
+    padding: 30px;
+    margin: auto auto;
+}
+
+/*///////////////// Comprobacion de usuario activo////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px){
+
+}
+/* / Escritorio grande / */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* / Escritorio pequeño / tablet / */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+/* / Tablets y phablets / */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    #scan-user .container{
+        padding: 45vh 5vw;
+    
+    }
+}
+
+/* / Teléfonos / */
+@media only screen and (max-width: 575px){
+    #scan-user .container{
+        padding: 45vh 0vw;
+    
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/user.css" />
+  <script defer src="./js/app-todosProductos.js" type="module"></script>
+  <title>Admin Zone - todos los productos</title>
+</head>
+
+<body>
+
+
+  <section class="" style="width: 90%;">
+
+    <div id="NewUsers">
+      
+      <form class="row" id="formulario">
+        <div class="mb-3 col-4">
+          <label for="exampleInputEmail1" class="form-label">Nombre de postre</label>
+          <input type="text" class="form-control" id="product-name" required>
+        </div>
+        <div class="mb-3 col-2">
+          <label for="exampleInputEmail1" class="form-label">Precio</label>
+          <input type="number" class="form-control" id="product-price" >
+        </div>
+        <div class="mb-3 col-3">
+          <label for="exampleInputEmail1" class="form-label">Peso | g</label>
+          <input type="number" class="form-control" id="product-size" >
+        </div>
+        <div class="mb-3 col-3">
+          <label for="exampleInputEmail1" class="form-label">Porciones</label>
+          <input type="text" class="form-control" id="product-part" >
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Descripcion</label>
+          <input type="text" class="form-control" id="product-description" >
+        </div>
+        
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Ingredientes</label>
+          <input type="text" class="form-control" id="product-ingre">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Dirección imagen</label>
+          <input type="url" class="form-control" id="product-url">
+        </div>
+        
+
+        <div class="mb-3 col-6">
+          <button type="submit" class="btn btn-primary d-inline" id="btn-insert">Guardar</button>
+          <button type="submit" class="btn btn-primary d-none" id="btn-update">Actualizar</button>
+
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <section class="row" id="card-users" style="width: 95%;">
+    <div class="mb-3 col-12" style="padding: 0 5%;">
+      <input id="input-search" type="search" name="field-search" class="form-control" placeholder="Busqueda por postre">
+    </div>
+    <table class="table table-striped col-12" style="white-space: nowrap; overflow-x: auto;">
+      <thead class="table-dark ">
+        <tr class="">
+          <th class="">#</th>
+          <td class="col-1">Postre</td>
+          <td class="col-1">Precio</td>
+          <td class="col-1">Porciones</td>
+          <td class="col-1">Peso</td>
+          <td class="col-1">Descripción</td>
+          <td class="col-1">Ingredientes</td>
+          <td class="col-2">URL</td>
+          <td class="col-2">Options</td>
+        </tr>
+      </thead>
+      <tbody id="allUsers">
+
+      </tbody>
+    </table>
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+
+</html>

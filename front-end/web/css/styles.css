@@ -1,0 +1,438 @@
+@import url();
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --color-1: rgba(0, 0, 0, 0.123);
+    --color-2: rgb(211, 1, 1);
+    --color-3: rgba(255, 0, 0, 0.418);
+    --color-4: rgb(24, 24, 24);
+
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    margin: 0;
+
+}
+
+.sect {
+    width: 100%;
+    min-height: 500px;
+}
+
+#sect1,
+#sect3 {
+    background-color: #3333337d;
+    color: #fff;
+}
+
+.sect-disable{
+    width: 100%;
+    min-height: 400px;
+    background-color: #00000000;
+    box-shadow: none;
+}
+
+
+video {
+
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+
+h1 {
+    margin: 0;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: var(--color-2);
+    font-weight: bolder;
+    margin: 5px;
+
+    transition: 0.4s;
+
+}
+
+#nav .nav-link:hover,
+main .nav-link:hover {
+    box-shadow: 0px 5px 15px 0px var(--color-1);
+    border-radius: 5px;
+    color: var(--color-4);
+}
+
+#nav .nav-link:focus,
+main .nav-link:focus {
+    color: black;
+    background-color: var(--color-3);
+}
+
+/* Estilos del HEADER */
+
+header {
+    height: 250px;
+    width: 100%;
+    position: relative;
+}
+
+header .logo {
+    background-color: white;
+    height: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo h1 {
+    font-size: 5.5rem;
+    font-family: 'Dancing Script', cursive;
+
+    z-index: 1000;
+
+}
+
+header nav {
+    box-shadow: 0px 5px 15px 0px var(--color-1);
+    background-color: white;
+    padding: 15px;
+    z-index: 99;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+header nav div div {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos del HEADER */
+.card-img {
+    filter: brightness(50%);
+    transition: filter .3s ease-out 100ms
+}
+
+.card-img:hover {
+    filter: brightness(100%);
+}
+
+#info-img img {
+    filter: brightness(35%);
+    object-fit: cover;
+    height: 200px;
+}
+
+#info-img .card-img-overlay {
+    height: 150px;
+}
+
+#card-footer-info {
+    height: 100px;
+}
+
+#products-container {
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+
+section {
+    width: 80%;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 10px;
+    /* border: 1px solid; */
+    box-shadow: 0px 5px 15px 0px var(--color-1);
+
+
+}
+
+section .card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+section .card img {
+    padding: 30px;
+
+}
+
+#sesion-card,
+.r-card,
+.l-card {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8vh 0;
+
+
+}
+
+#sesion-card .row {
+    margin: 25px;
+
+}
+
+#information {
+    width: 800px;
+}
+
+#user-count-info {
+    width: 1200px;
+    margin: 5vh 0;
+    height: 70vh;
+    box-shadow: 0px 5px 15px 5px var(--color-1);
+    border-radius: 5px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#user-count-info aside {
+    width: auto;
+    margin-right: 0;
+}
+
+/*REGISTRO y INICIO DE SESION*/
+body {
+    perspective: 1400px;
+
+}
+
+#main-card {
+    position: relative;
+    transform-style: preserve-3d;
+    height: 800px;
+
+}
+
+#log,
+#reg {
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    backface-visibility: hidden;
+}
+
+#log {
+    background-color: rgb(255, 223, 223);
+
+    overflow: hidden;
+
+}
+
+#reg {
+
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 226, 226);
+
+    transform: rotateY(180deg);
+}
+
+/*REGISTRO y INICIO DE SESION*/
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 4vh;
+    box-shadow: 0px 5px 15px 5px var(--color-1);
+    z-index: 1000;
+
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--color-3);
+    color: var(--color-4);
+    box-shadow: 0px 5px 15px 5px var(--color-1);
+
+}
+
+/* FOOTER */
+
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px) {
+    section {
+        width: 1000px;
+
+
+    }
+
+}
+/*////////////////////////////////////////////////*/
+.portada{
+    height: 120vh;
+    padding: 0%;
+    margin: 0%;
+}
+.portada .imagen1{
+    height: 60vh;
+    background-image: url(https://s1.1zoom.me/big0/366/Sweets_Cakes_Chocolate_Cookies_Black_background_537922_1288x1024.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    
+    /* background-color: black; */
+
+}
+.sect-disable{
+    height: 30vh;
+    background-image: url(https://s1.1zoom.me/b5657/368/Cakes_Chocolate_Black_background_Piece_573738_1600x1200.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    
+    /* background-color: black; */
+
+}
+
+
+.portada .imagen div{
+    
+}
+.presentacion{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+#info-presentacion{
+    /* border: 1px solid black; */
+
+    margin: 2%;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#info-presentacion img{
+
+    border-radius: 15px;
+    height: 500px;
+    width: auto;
+}
+.info-text{
+    text-align: justify;
+    padding: 0px 25px;
+}
+.info-text h1, .info-text h3{
+    font-size: 5rem;
+    font-family: 'Dancing Script', cursive;
+}
+#info-presentacion div{
+    width: 50%;
+}
+
+#sect1 .imagen1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#title-h1 {
+    filter: drop-shadow(1px 1px 10px black);
+    font-size: 8rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+/*////////////////////////////////////////////////*/
+/* / Escritorio grande / */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #user-count-info {
+        width: 900px;
+    }
+}
+
+/* / Escritorio pequeño / tablet / */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #user-count-info {
+        width: 100%;
+    }
+
+}
+
+/* / Tablets y phablets / */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    #user-count-info {
+        width: 100%;
+    }
+
+}
+
+
+/* / Teléfonos / */
+@media only screen and (max-width: 575px) {
+    .logo h1 {
+        font-size: 3.5rem;
+
+    }
+
+    #information {
+        width: 100%;
+    }
+
+    #sesion-card {
+        width: 99%;
+        margin: 2vh 0;
+
+    }
+
+    #user-count-info {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #user-count-info iframe {
+        height: 80vh;
+    }
+
+    #user-count-info aside {
+        width: 250px;
+        text-align: center;
+    }
+
+    #products-container {
+        padding: 2%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        gap: 20px;
+    }
+}
